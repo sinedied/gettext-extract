@@ -33,6 +33,7 @@
     "postpublish": "git tag -a $npm_package_version -m '$npm_package_version' && git push --tags"
   },
   "dependencies": {
+    "chalk": "^2.3.0",
     "find-up": "^2.1.0",
     "fs-extra": "^4.0.2",
     "gettext-extractor": "^3.1.0",
