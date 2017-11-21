@@ -1,0 +1,4 @@
+#!/usr/bin/env node
+const ShowConfigCli = require('../index');
+const cli = new ShowConfigCli(process.argv.slice(2));
+cli.run();

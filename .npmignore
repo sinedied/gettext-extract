@@ -1,0 +1,6 @@
+test/
+.editorconfig.json
+.npmignore
+.gitignore
+.travis.yml
+npm-debug.log
