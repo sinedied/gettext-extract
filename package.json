@@ -22,7 +22,6 @@
   "bugs": {
     "url": "https://github.com/sinedied/gettext-extract/issues"
   },
-  "private": true,
   "preferGlobal": true,
   "main": "index.js",
   "bin": {
