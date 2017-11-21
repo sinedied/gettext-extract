@@ -73,7 +73,7 @@ class GettextExtractCli {
       this._exit(chalk`{yellow No parser configuration found}`);
     }
 
-    fs.ensureDir(path.dirname(outputFile));
+    fs.ensureDirSync(path.dirname(outputFile));
     extractor.savePotFile(outputFile, config.headers);
     extractor.printStats();
   }
