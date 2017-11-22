@@ -29,7 +29,7 @@ Options:
 
 ## Configuration
 
-Configuration for message extraction can be provided using a `.gettext.json` file, a custon JSON file using the
+Configuration for message extraction can be provided using a `.gettext.json` file, a custom JSON file using the
 `--config` CLI option or by adding a `gettext` object in your `package.json`.
 
 Here is an example configuration (remove comments for valid JSON):
