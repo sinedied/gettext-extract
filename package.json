@@ -1,6 +1,6 @@
 {
   "name": "gettext-extract",
-  "version": "1.0.2",
+  "version": "2.0.0",
   "description": "CLI for extracting Gettext messages from JavaScript, TypeScript, JSX and HTML",
   "keywords": [
     "gettext",
