@@ -36,6 +36,7 @@ class GettextExtractCli {
     if (this._options.help) {
       return this._help();
     }
+
     const config = this._loadConfig(this._options.config);
     this._extract(config, this._options.outputFile);
   }
@@ -61,9 +62,12 @@ class GettextExtractCli {
         .createHtmlParser(config.html.parsers.map(parser => {
           if (parser.element) {
             return HtmlExtractors.elementContent(parser.element, parser);
-          } else if (parser.attribute) {
+          }
+
+          if (parser.attribute) {
             return HtmlExtractors.elementAttribute(`[${parser.attribute}]`, parser.attribute, parser);
           }
+
           return this._exit(chalk`{red Error, unknown HTML parser type}`);
         }))
         .parseFilesGlob(config.html.glob.pattern || 'src/**/*.html)', config.html.glob.options);
@@ -93,6 +97,7 @@ class GettextExtractCli {
     if (!config) {
       this._exit(chalk`{yellow No configuration found}`);
     }
+
     return config;
   }
 
